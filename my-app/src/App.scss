@@ -1,0 +1,96 @@
+body {
+  background-color: #f1faee;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  width: auto;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  padding: 25px;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  input {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+.button-submit {
+  margin: 25px;
+  background-color: #a8dadc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: inset 0px 0px 5px #457b9d;
+  }
+}
+
+.todo {
+  padding: 25px 10px;
+  margin: 10px 10px 50px 10px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  background-color: #a8dadc;
+  width: auto;
+
+  div {
+    margin: 0px 25px;
+    display: flex;
+    text-align: left
+  }
+}
+
+.btn-done,
+.btn-delete {
+  margin: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: inset 0px 0px 5px #06d6a0;
+  }
+}
+
+.btn-done {
+  background-color: #2a9d8f;
+}
+
+.btn-delete {
+  background-color: #e63946;
+}
+.done {
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .todo {
+    padding: 50px 100px;
+    justify-content: center
+  }
+  .button-container {
+    margin-left: 25px;
+    button {
+      margin: 10px;
+    }
+  }
+}
